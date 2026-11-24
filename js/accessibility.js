@@ -1,0 +1,12 @@
+/* Acessibilidade básica e navegação compartilhada. Preferências permanecem no navegador. */
+(function(){
+ const body=document.body;const FONT_KEY='autonomia-conforto-font';const CONTRAST_KEY='autonomia-conforto-contrast';let scale=Number(localStorage.getItem(FONT_KEY)||1);if(!Number.isFinite(scale)||scale<1||scale>1.3)scale=1;body.style.setProperty('--font-scale',scale);if(localStorage.getItem(CONTRAST_KEY)==='on')body.classList.add('high-contrast');
+ const live=document.createElement('div');live.id='live-region';live.className='sr-only';live.setAttribute('aria-live','polite');live.setAttribute('aria-atomic','true');body.appendChild(live);
+ document.querySelectorAll('[data-font="up"]').forEach(b=>b.addEventListener('click',()=>{scale=Math.min(1.3,Math.round((scale+.1)*10)/10);body.style.setProperty('--font-scale',scale);localStorage.setItem(FONT_KEY,scale);live.textContent='Tamanho do texto aumentado.'}));
+ document.querySelectorAll('[data-font="down"]').forEach(b=>b.addEventListener('click',()=>{scale=Math.max(.9,Math.round((scale-.1)*10)/10);body.style.setProperty('--font-scale',scale);localStorage.setItem(FONT_KEY,scale);live.textContent='Tamanho do texto reduzido.'}));
+ document.querySelectorAll('[data-font="reset"]').forEach(b=>b.addEventListener('click',()=>{scale=1;body.style.setProperty('--font-scale',scale);localStorage.setItem(FONT_KEY,scale);live.textContent='Tamanho do texto restaurado.'}));
+ document.querySelectorAll('[data-contrast]').forEach(b=>b.addEventListener('click',()=>{body.classList.toggle('high-contrast');localStorage.setItem(CONTRAST_KEY,body.classList.contains('high-contrast')?'on':'off');live.textContent=body.classList.contains('high-contrast')?'Alto contraste ativado.':'Alto contraste desativado.'}));
+ document.querySelectorAll('[data-menu-toggle]').forEach(btn=>btn.addEventListener('click',()=>{const nav=document.getElementById('primary-nav');const open=btn.getAttribute('aria-expanded')!=='true';btn.setAttribute('aria-expanded',String(open));nav?.classList.toggle('is-open',open)}));
+ document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
+ document.querySelectorAll('[data-demo-form]').forEach(form=>form.addEventListener('submit',e=>{e.preventDefault();const status=form.querySelector('[data-form-status]');if(status)status.textContent='Mensagem demonstrativa registrada nesta página. Nenhum dado foi enviado a um servidor.';form.reset()}));
+})();

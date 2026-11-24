@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Central de ajuda, acessibilidade e perguntas frequentes do Autonomia &amp; Conforto.">
+  <title>Central de ajuda | Autonomia &amp; Conforto</title>
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/ajuda.css">
+</head>
+<body>
+
+  <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+  <div class="top-note">Produtos pensados para facilitar a rotina • Demonstração acadêmica do e-commerce</div>
+  <header class="site-header">
+    <div class="container header-main">
+      <a class="brand" href="index.html" aria-label="Autonomia e Conforto - página inicial">
+        <img src="assets/img/logo.svg" alt="">
+        <span><strong>Autonomia<br>&amp; Conforto</strong><small>Mais independência para cada dia</small></span>
+      </a>
+      <form class="search-form" data-category-search role="search" aria-label="Buscar produtos">
+        <label class="sr-only" for="site-search">Buscar produtos e categorias</label>
+        <input id="site-search" name="q" type="search" placeholder="Busque por produtos ou categorias..." autocomplete="off">
+        <button type="submit" aria-label="Buscar">⌕</button>
+      </form>
+      <div class="header-actions">
+        <button class="icon-button menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menu">☰</button>
+        <a class="icon-link" href="ajuda.html" aria-current="page"><span aria-hidden="true">◉</span><span class="action-label">Ajuda</span></a>
+        <a class="icon-link" href="carrinho.html"><span aria-hidden="true">🛒</span><span class="action-label">Carrinho</span><span class="cart-count" data-cart-count>0</span></a>
+      </div>
+    </div>
+    <nav class="main-nav" id="primary-nav" aria-label="Navegação principal">
+      <div class="container nav-inner">
+        <a href="index.html">Início</a>
+        <a href="categorias.html">Categorias</a>
+        <a href="categorias.html?q=roupas">Roupas adaptativas</a>
+        <a href="categorias.html?q=utensilios">Utensílios</a>
+        <a href="ajuda.html" aria-current="page">Ajuda</a>
+      </div>
+    </nav>
+    <div class="access-tools">
+      <div class="container access-inner">
+        <strong>Acessibilidade:</strong><span>Texto</span>
+        <button class="small-control" type="button" data-font="down" aria-label="Diminuir tamanho do texto">A−</button>
+        <button class="small-control" type="button" data-font="reset" aria-label="Restaurar tamanho do texto">A</button>
+        <button class="small-control" type="button" data-font="up" aria-label="Aumentar tamanho do texto">A+</button>
+        <button class="small-control" type="button" data-contrast aria-label="Alternar alto contraste">◐ Contraste</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo-principal" class="container" style="padding: 2rem 0;">
+
+    <section class="hero-ajuda">
+      <h1>Central de Ajuda</h1>
+      <p>Tire suas dúvidas sobre roupas adaptativas, utensílios práticos, acessibilidade do site e como comprar com segurança.</p>
+
+      <form class="busca-ajuda" role="search" onsubmit="filtrarFAQ(event)">
+        <label for="campo-busca" class="skip-link">Buscar dúvida</label>
+        <input type="search" id="campo-busca" placeholder="Digite sua dúvida (ex: tamanho, contraste, roupa, troca)..." aria-label="Digite sua dúvida">
+        <button type="submit" class="btn-ajuda">Buscar</button>
+      </form>
+    </section>
+
+    <section class="grid-ajuda" aria-label="Tópicos de Ajuda Rápida">
+      <article class="card-ajuda">
+        <h2>👓 Acessibilidade Visual</h2>
+        <p>Você pode aumentar o tamanho das letras e ativar o alto contraste utilizando as ferramentas de acessibilidade disponíveis no site.</p>
+      </article>
+
+      <article class="card-ajuda">
+        <h2>👕 Roupas Adaptativas</h2>
+        <p>Nossas peças possuem fechos magnéticos, velcro e aberturas pensadas para vestir com mais facilidade e autonomia.</p>
+      </article>
+
+      <article class="card-ajuda">
+        <h2>⌨️ Navegação pelo Teclado</h2>
+        <p>Use a tecla <strong>Tab</strong> para navegar entre botões e links, e pressione <strong>Enter</strong> para abrir ou selecionar.</p>
+      </article>
+    </section>
+
+    <section class="faq-section" id="perguntas" aria-labelledby="titulo-faq">
+      <h2 id="titulo-faq">Perguntas Frequentes (FAQ)</h2>
+
+      <details class="faq-item">
+        <summary>Como aumento o tamanho do texto no site?</summary>
+        <p>Utilize os controles de acessibilidade do site para ampliar a fonte ou use o atalho <strong>Ctrl +</strong> (no computador) para dar zoom na tela.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Como funciona o fechamento das roupas adaptativas?</summary>
+        <p>As camisas e camisetas contam com fechamentos práticos (como ímãs embutidos ou velcro suave) que dispensam botões pequenos e difíceis de abotoar.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Os utensílios práticos são fáceis de segurar?</summary>
+        <p>Sim. Os abridores ergonômicos, apoios de alcance e kits de talheres têm cabos anatômicos e antiderrapantes para dar mais firmeza e conforto.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>O site funciona com leitores de tela?</summary>
+        <p>A página utiliza HTML semântico, textos alternativos nas imagens e navegação por teclado para favorecer o uso com leitores de tela. A experiência pode variar conforme o leitor e o navegador.</p>
+      </details>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand"><img src="assets/img/logo.svg" alt=""><strong>Autonomia &amp; Conforto</strong></div>
+          <p>Uma proposta de e-commerce com roupas adaptativas e utensílios práticos para apoiar a autonomia no dia a dia.</p>
+          <p class="notice">Projeto acadêmico demonstrativo. Não há operação comercial, atendimento ou processamento de pedidos reais.</p>
+        </div>
+        <div><h2>Institucional</h2><a href="index.html">Início</a><a href="categorias.html">Nossos produtos</a></div>
+        <div><h2>Ajuda</h2><a href="ajuda.html#perguntas">Perguntas frequentes</a><a href="ajuda.html">Acessibilidade</a><a href="carrinho.html">Carrinho</a></div>
+      </div>
+      <div class="footer-bottom"><span>© <span data-year>2026</span> Autonomia &amp; Conforto. Projeto acadêmico.</span><span>Mais autonomia para cada dia.</span></div>
+    </div>
+  </footer>
+
+  <script src="js/products.js" defer></script>
+  <script src="js/app.js" defer></script>
+  <script src="js/accessibility.js" defer></script>
+  <script>
+    function filtrarFAQ(event) {
+      if (event) event.preventDefault();
+      const normalizar = (texto) => texto.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+      const termo = normalizar(document.getElementById('campo-busca').value.trim());
+      document.querySelectorAll('.faq-item').forEach((item) => {
+        const texto = normalizar(item.textContent);
+        item.style.display = texto.includes(termo) ? 'block' : 'none';
+        if (termo.length > 2 && texto.includes(termo)) item.open = true;
+      });
+    }
+    document.getElementById('campo-busca')?.addEventListener('input', () => filtrarFAQ());
+  </script>
+</body>
+</html>

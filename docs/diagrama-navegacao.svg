@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="650" viewBox="0 0 1600 650">
+ <defs>
+  <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#1f6b5b"/></marker>
+  <linearGradient id="head" x1="0" x2="1"><stop offset="0" stop-color="#164c44"/><stop offset="1" stop-color="#2d7e6c"/></linearGradient>
+  <style>
+   .h{font:700 30px Arial,sans-serif;fill:#203431}.sub{font:18px Arial,sans-serif;fill:#5e6b67}
+   .box{fill:#fff;stroke:#9bb9ac;stroke-width:3;rx:20}.boxmain{fill:#e8f1eb;stroke:#1f6b5b;stroke-width:3;rx:20}
+   .label{font:700 23px Arial,sans-serif;fill:#203431;text-anchor:middle}.small{font:17px Arial,sans-serif;fill:#50615b;text-anchor:middle}
+   .arrow{fill:none;stroke:#1f6b5b;stroke-width:4;marker-end:url(#arrow)}
+   .foot{font:18px Arial,sans-serif;fill:#fff}
+  </style>
+ </defs>
+ <rect width="1600" height="650" fill="#fbfaf7"/>
+ <text x="800" y="55" text-anchor="middle" class="h">Modelagem da navegação — Autonomia &amp; Conforto</text>
+ <text x="800" y="88" text-anchor="middle" class="sub">Estrutura das páginas, relação entre módulos e fluxo principal de compra</text>
+ <!-- navigation row -->
+ <rect class="boxmain" x="55" y="145" width="265" height="125"/>
+ <text class="label" x="187" y="195">Página inicial</text><text class="small" x="187" y="228">Home / destaques</text>
+ <rect class="box" x="395" y="145" width="265" height="125"/>
+ <text class="label" x="527" y="195">Categorias</text><text class="small" x="527" y="228">Busca e catálogo</text>
+ <rect class="box" x="735" y="145" width="265" height="125"/>
+ <text class="label" x="867" y="195">Detalhes do produto</text><text class="small" x="867" y="228">Descrição / tamanho</text>
+ <rect class="box" x="1075" y="145" width="220" height="125"/>
+ <text class="label" x="1185" y="195">Carrinho</text><text class="small" x="1185" y="228">Itens e quantidades</text>
+ <rect class="boxmain" x="1370" y="145" width="190" height="125"/>
+ <text class="label" x="1465" y="192">Finalização</text><text class="small" x="1465" y="225">Simulada</text>
+ <path class="arrow" d="M320 207 H385"/><path class="arrow" d="M660 207 H725"/><path class="arrow" d="M1000 207 H1065"/><path class="arrow" d="M1295 207 H1360"/>
+ <!-- help branch -->
+ <rect class="box" x="395" y="345" width="265" height="105"/>
+ <text class="label" x="527" y="390">Central de ajuda</text><text class="small" x="527" y="421">FAQ / contato</text>
+ <path class="arrow" d="M187 270 V398 H385"/>
+ <text x="205" y="328" class="small" text-anchor="start">Acesso pelo menu</text>
+ <!-- global tools -->
+ <rect x="55" y="510" width="1505" height="85" rx="18" fill="url(#head)"/>
+ <text x="95" y="545" class="foot" font-weight="700">Elementos globais compartilhados</text>
+ <text x="95" y="575" class="foot">Cabeçalho e menu • Busca • Aumento/redução de fonte • Alto contraste • Contador do carrinho • Rodapé e links de ajuda</text>
+ <path d="M527 450 V485 H800 V500" stroke="#1f6b5b" stroke-width="3" fill="none" stroke-dasharray="7 7"/>
+ <path d="M800 485 H187 V500" stroke="#1f6b5b" stroke-width="3" fill="none" stroke-dasharray="7 7"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="360" viewBox="0 0 1500 360">
+<defs><marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12Z" fill="#1f6b5b"/></marker></defs>
+<rect width="1500" height="360" fill="#fbfaf7"/>
+<text x="750" y="50" font-family="Arial" font-size="28" font-weight="700" fill="#203431" text-anchor="middle">Fluxo de compra demonstrativo</text>
+<g font-family="Arial" text-anchor="middle">
+<g fill="#e8f1eb" stroke="#1f6b5b" stroke-width="3"><rect x="30" y="115" width="190" height="105" rx="18"/><rect x="275" y="115" width="190" height="105" rx="18"/><rect x="520" y="115" width="190" height="105" rx="18"/><rect x="765" y="115" width="190" height="105" rx="18"/><rect x="1010" y="115" width="190" height="105" rx="18"/><rect x="1255" y="115" width="210" height="105" rx="18"/></g>
+<g fill="#203431" font-size="20" font-weight="700"><text x="125" y="160">Início</text><text x="370" y="153">Escolha de</text><text x="370" y="180">categoria</text><text x="615" y="153">Detalhes do</text><text x="615" y="180">produto</text><text x="860" y="153">Adicionar ao</text><text x="860" y="180">carrinho</text><text x="1105" y="160">Revisar itens</text><text x="1360" y="153">Finalização</text><text x="1360" y="180">simulada</text></g>
+<g stroke="#1f6b5b" stroke-width="4" fill="none" marker-end="url(#a)"><path d="M220 168 H265"/><path d="M465 168 H510"/><path d="M710 168 H755"/><path d="M955 168 H1000"/><path d="M1200 168 H1245"/></g>
+<text x="750" y="285" font-size="18" fill="#5e6b67">A ajuda e os controles de acessibilidade podem ser acessados em qualquer etapa.</text>
+</g></svg>
